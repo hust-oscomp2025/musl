@@ -101,15 +101,15 @@ int posix_fallocate(int, off_t, off_t);
 #define S_IRWXO     0000007   /* 其他人读/写/执行 */
 #endif
 
-/* 文件类型测试宏 */
-#define S_ISTYPE(mode, mask)  (((mode) & S_IFMT) == (mask))
-#define S_ISDIR(mode)         S_ISTYPE((mode), S_IFDIR)
-#define S_ISCHR(mode)         S_ISTYPE((mode), S_IFCHR)
-#define S_ISBLK(mode)         S_ISTYPE((mode), S_IFBLK)
-#define S_ISREG(mode)         S_ISTYPE((mode), S_IFREG)
-#define S_ISFIFO(mode)        S_ISTYPE((mode), S_IFIFO)
-#define S_ISLNK(mode)         S_ISTYPE((mode), S_IFLNK)
-#define S_ISSOCK(mode)        S_ISTYPE((mode), S_IFSOCK)
+// /* 文件类型测试宏 */
+// #define S_ISTYPE(mode, mask)  (((mode) & S_IFMT) == (mask))
+// #define S_ISDIR(mode)         S_ISTYPE((mode), S_IFDIR)
+// #define S_ISCHR(mode)         S_ISTYPE((mode), S_IFCHR)
+// #define S_ISBLK(mode)         S_ISTYPE((mode), S_IFBLK)
+// #define S_ISREG(mode)         S_ISTYPE((mode), S_IFREG)
+// #define S_ISFIFO(mode)        S_ISTYPE((mode), S_IFIFO)
+// #define S_ISLNK(mode)         S_ISTYPE((mode), S_IFLNK)
+// #define S_ISSOCK(mode)        S_ISTYPE((mode), S_IFSOCK)
 
 
 #if defined(_GNU_SOURCE) || defined(_BSD_SOURCE)
